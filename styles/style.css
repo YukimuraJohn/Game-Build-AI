@@ -18,7 +18,7 @@ body {
   background-size: 100% auto;
   background-position: top center;
   background-color: #121214;
-  color: #f4f4f4;
+  color: #f8f8f8;
 }
 
 header {
@@ -26,9 +26,99 @@ header {
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
-
 }
 
 header img {
   width: 15rem;
+}
+
+main {
+  max-width: 36rem;
+  width: 90%;
+  margin: 3rem auto;
+}
+
+section {
+  background-image: linear-gradient(90deg, #9572fc 0%, #6cadd5 25%, #43e7ad 50%, #93de85 75%, #e2d45c 100%);
+  border-radius: 0.625rem;
+  padding-top: 4px;
+}
+
+section > div {
+  padding-top: 1.5rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #2a2634;
+}
+
+section h2 {
+  letter-spacing: -0.43px;
+}
+
+section p {
+  letter-spacing: 0.18px;
+  color: #a1a1aa;
+}
+
+/* Animations CSS */
+
+main section {
+  opacity: 0;
+  transform: translateY(2rem);
+
+  animation-name: appear;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+form input, form select {
+  all: unset;
+  flex: 1;
+  padding: 0.7rem;
+  border: 2px solid #5810cc;
+  border-radius: 0.5rem;
+  font-size: .875rem;
+
+  color: #f8f8f8;
+  background-color: #121214cc;
+
+}
+
+input {
+  flex: 1;
+}
+
+button {
+  width: 100%;
+  padding: 0.7rem;
+  border: 0;
+  border-radius: 0.5rem;
+
+  background-image: linear-gradient(275deg, #9572fc 0%, #6cadd5 25%, #43e7ad 50%, #93de85 75%, #e2d45c 100%);
+  color: #f8f8f8;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.12px;
+
+  transition: all .2s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 1rem rgba(88, 16, 204, 0.28); /* Shadow effect on hover base on border color*/
 }

@@ -20,15 +20,44 @@
 
   <main>
     <section>
-      <h2>Game-Build-AI</h2>
-      <p>Pergunte sobre estratégias e builds para seus jogos!</p>
-      <!-- <p>Game-Build-AI é um projeto de código aberto que visa criar uma plataforma para perguntar sobre duvidas relacionadas a builds dos jogos, como por exemplo: builds de campeões de League of Legends, builds de armas de Genshin Impact, builds de personagens de Honkai Star Rail, entre outros.</p>
+      <div>
+        <h2>Game-Build-AI</h2>
+        <p>Pergunte sobre estratégias e builds para seus jogos!</p>
+        
+        <form id="form">
+          <input type="password" id="apiKey" placeholder="Invorme API KEY Gemini" required >
+
+          <select id="gameSelect">
+            <option value="">Selecione um jogo</option>
+            <option value="apex">Apex Legends</option>
+            <option value="fortnite">Fortnite</option>
+            <option value="genshin">Genshin Impact</option>
+            <option value="honkai">Honkai Star Rail</option>
+            <option value="lol">League of Legends</option>
+            <option value="overwatch">Overwatch</option>
+            <option value="pubg">PUBG</option>
+            <option value="valorant">Valorant</option>
+          </select>
+
+            <input type="text" id="questionInput" placeholder="Ex: peça uma build para seu campião no league of legends" required>
+
+            <button id="askButton">Perguntar</button>
+
+            <div id="AiResponse">
+              <div class="response-content">
+
+              </div>
+            </div>
+        </form>
+      </div><!-- <p>Game-Build-AI é um projeto de código aberto que visa criar uma plataforma para perguntar sobre duvidas relacionadas a builds dos jogos, como por exemplo: builds de campeões de League of Legends, builds de armas de Genshin Impact, builds de personagens de Honkai Star Rail, entre outros.</p>
+      
       <p>O objetivo é fornecer uma base de conhecimento que possa ser facilmente acessada e atualizada por qualquer pessoa interessada em contribuir com o projeto.</p>
       <p>O projeto é mantido por uma comunidade de desenvolvedores e entusiastas de tecnologia.</p>
       <p>Se você está interessado em contribuir, sinta-se à vontade para abrir uma issue ou pull request no repositório do GitHub.</p>
       <p>Para mais informações, visite o repositório do projeto no GitHub: <a href="https://github.com/Game-Build-AI/Game-Build-AI" target="_blank">Game-Build-AI no GitHub</a>.</p> -->
     </section>
   </main>
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>
