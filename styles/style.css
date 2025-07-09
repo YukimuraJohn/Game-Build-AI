@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+body *, 
+:root {
+  font-family: "Inter", sans-serif;
+  line-height: 160%;
+}
+
+body {
+  background-image: url("../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  background-color: #121214;
+  color: #f4f4f4;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+
+}
+
+header img {
+  width: 15rem;
+}
